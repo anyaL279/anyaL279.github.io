@@ -1,0 +1,17 @@
+html {
+--text: #4d3a29;
+--background: #ffffff;
+--primary: #c9f0b3;
+--secondary: #fcffb3;
+--accent: #f5daf9;
+}
+body{ 
+    color: var(--text);
+    background: var(--background);
+}
+h3 {
+    color: var(--primary);
+}
+ul { 
+    color: var(--accent); 
+}
