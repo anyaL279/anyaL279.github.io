@@ -8,9 +8,11 @@ html {
 body{ 
     color: var(--text);
     background: var(--background);
+    font-family: "Crimson Text"
 }
 h3 {
     color: var(--primary);
+    font-family: "Story Script"
 }
 ul { 
     color: var(--accent); 
