@@ -1,24 +1,49 @@
 html {
---text: #4d3a29;
---background: #ffffff;
---primary: #c9f0b3;
---secondary: #fcffb3;
---accent: #f5daf9;
+    --text: #4d3a29;
+    --background: #ffffff;
+    --primary: #c9f0b3;
+    --secondary: #fcffb3;
+    --accent: #f5daf9;
 }
-body{ 
+
+* {
+    border: 1px solid navy
+}
+
+body {
     color: var(--text);
     background: var(--background);
     font-family: "Crimson Text";
     font-size: 5mm;
 }
+
+h1 {
+    border: 3px solid #9cdf8e;
+    background-color: rgb(214, 248, 248);
+    padding: 1.2em
+}
+
+
 h3 {
     color: var(--primary);
     font-family: "Story Script";
     font-size: 1.5em;
     font-weight: 200;
+    text-orientation: sideways;
+    border: 3px dashed #71db5b
 }
-ul { 
-    color: var(--accent); 
+
+ul {
+    color: var(--accent);
     font-style: italic;
-    text-decoration-line: underline; r
+    text-decoration-line: underline;
+}
+
+p.large {
+    font-size: 1.5em;
+}
+
+ol {
+    border: 5px dashed #00aaff;
+    padding: 0.9em
 }
