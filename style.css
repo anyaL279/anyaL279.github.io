@@ -30,11 +30,11 @@ h3 {
     font-size: 1.5em;
     font-weight: 200;
     text-orientation: sideways;
-    border: 3px dashed #71db5b
+    border: 3px dashed rgb(47, 110, 34)
 }
 
 ul {
-    color: var(--accent);
+    color:purple;
     font-style: italic;
     text-decoration-line: underline;
 }
