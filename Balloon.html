@@ -6,10 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-   <p>🎈</p>
+<p id="balloon">🎈</p>
 
 <script>
-  // Your code here
-</script>
+  let balloonEl = document.getElementById("balloon");
+  let fontSize = 10;
+  balloonEl.style.fontSize = fontSize + "px";
+  function handleKeyDown(event) {
+    if (event.key == "ArrowUp") {
+     fontSize *= 1.1;
+     balloonEl.style.fontSize = fontSize + "px";
+      event.preventDefault();
+    }
+}     function handleKeyDown(event) {
+    if (event.key == "ArrowDown") {
+      fontSize /=1.1;
+      balloonEl.style.fontSize = fontSize + "px";
+      event.preventDefault();
+    }
+  }
+  window.addEventListener("keydown", handleKeyDown);
+</script> 
 </body>
 </html>
