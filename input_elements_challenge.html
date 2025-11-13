@@ -98,8 +98,13 @@
         const colorOutput = document.getElementById("colorOutput");
 
         // TODO: Update the background color of colorOutput whenever the color input changes.
+        //1. add event lisener for "input" event on colorInput
+        //2. Inside the event handler, set colorOutput.style.backroundColor 
+        //      to the selected color (colorInput.value).
         // Challenge: Also display the hex code and volume value dynamically.
-
+        colorInput.addEventListener("input", () => {
+             colorOutput.style.backroundColor = "302550"
+        });
         // --- PART 3 ---
         const subscribeBox = document.getElementById("subscribeBox");
         const btnSubmit = document.getElementById("btnSubmit");
