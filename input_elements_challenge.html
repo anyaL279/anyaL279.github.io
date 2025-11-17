@@ -83,7 +83,7 @@
         btnGreet.addEventListener("click", () => {
         let name = nameInput.value;
         let age = ageInput.value
-        greetingOutput.textContent = "Hello " + name ", You're" + age + "years old!"
+        greetingOutput.textContent = "Hello " + name + ", You're" + age + "years old!"
         console.log(greetingOutput.textContent)
             // TODO: Display a message like "Hello NAME, you are AGE years old!"
             // Challenge: If age < 13, show "You're just a kid!" instead.
@@ -96,14 +96,14 @@
         const colorInput = document.getElementById("colorInput");
         const volumeInput = document.getElementById("volumeInput");
         const colorOutput = document.getElementById("colorOutput");
-
+        colorOutput.textContent = "Test content"
         // TODO: Update the background color of colorOutput whenever the color input changes.
         //1. add event lisener for "input" event on colorInput
-        //2. Inside the event handler, set colorOutput.style.backroundColor 
+        //2. Inside the event handler, set colorOutput.style.backgroundColor 
         //      to the selected color (colorInput.value).
         // Challenge: Also display the hex code and volume value dynamically.
         colorInput.addEventListener("input", () => {
-             colorOutput.style.backroundColor = ".value"
+             colorOutput.style.backroundColor = "colorImput.value"
         });
         // --- PART 3 ---
         const subscribeBox = document.getElementById("subscribeBox");
@@ -113,7 +113,7 @@
        let lightMode = document.getElementById("modeOutput");
      btnSubmit.addEventListener("click", () => {
     const mode = modeInput.value
-        modeOutput.textContent = "Light mode selected " + mode "
+        modeOutput.textContent = "Light mode selected " + mode;
         if (lightMode.checked){
          modegOutput.textContent = "Light mode selected";   
         }
