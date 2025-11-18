@@ -16,6 +16,17 @@
 </head>
 <body>
    <H1> Welcome the the widget page!</H1> 
-   <input type="text" name="username"> 
+   <button id="toggleHide">Toggle hidden</button>
+   <input id="usernameInput" type="text" name="username" hidden>
+   <script>
+    let toggleHideButton = document.getElementById("toggleHide");
+    let usernameInput = document.getElementById("usernameInput");
+    toggleHideButton.addEventListener("click", () => {
+        usernameInput.hidden = !usernameInput.hidden;
+        toggleHideButton.disabled = true;
+        // usernameInput.hidden = true; // hide it
+        // usernameInput.hidden = false; // show it
+    })
+   </script>
 </body>
 </html>
