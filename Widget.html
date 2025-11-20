@@ -18,6 +18,7 @@
    <H1> Welcome the the widget page!</H1> 
    <H2> Select one fortune button</H2>
    <button id="toggleHide">Red</button>
+   <button id="blue">blue</button>
    <button id="fortune1" hidden>Fortune 1</button>
    <input id="usernameInput" type="text" name="username" hidden>
    <script>
@@ -26,7 +27,8 @@
     toggleHideButton.addEventListener("click", () => {
         usernameInput.hidden = !usernameInput.hidden;
         toggleHideButton.disabled = true;
-        document.getElementById("fortune1").hidden = false;
+        //show fortune1 button //
+        document.getElementById("fortune1").hidden = false;  
         // usernameInput.hidden = true; // hide it// 
         // usernameInput.hidden = false; // show it//
     })
