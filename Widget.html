@@ -19,7 +19,10 @@
    <H2> Select one fortune button</H2>
    <button id="toggleHide">Red</button>
    <button id="blue">blue</button>
+   <button id="uniqueName">Content</button>
    <button id="fortune1" hidden>Fortune 1</button>
+   <button id="fortune2" hidden>Fortune 2</button>
+   <button id="fortune3" hidden>Fortune 3</button>
    <input id="usernameInput" type="text" name="username" hidden>
    <script>
     let toggleHideButton = document.getElementById("toggleHide");
@@ -31,6 +34,9 @@
         document.getElementById("fortune1").hidden = false;  
         // usernameInput.hidden = true; // hide it// 
         // usernameInput.hidden = false; // show it//
+        document.getElementById("fortune2").hidden = false;
+        document.getElementById("fortune3").hidden = false;
+
     })
    </script>
 </body>
