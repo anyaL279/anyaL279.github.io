@@ -17,9 +17,10 @@
 <body>
    <H1> Welcome the the widget page!</H1> 
    <H2> Select one fortune button</H2>
+   <H3> The magical fortune</H3>
    <button id="toggleHide">Red</button>
    <button id="blue">blue</button>
-   <button id="uniqueName">Content</button>
+   <button id="uniqueName" hidden>Content</button>
    <button id="fortune1" hidden>Fortune 1</button>
    <button id="fortune2" hidden>Fortune 2</button>
    <button id="fortune3" hidden>Fortune 3</button>
@@ -31,12 +32,19 @@
         usernameInput.hidden = !usernameInput.hidden;
         toggleHideButton.disabled = true;
         //show fortune1 button //
-        document.getElementById("fortune1").hidden = false;  
-        // usernameInput.hidden = true; // hide it// 
-        // usernameInput.hidden = false; // show it//
+        //show fortune2 button //
+        //show fortune3 button //
+        document.getElementById("fortune1").hidden = false;
         document.getElementById("fortune2").hidden = false;
         document.getElementById("fortune3").hidden = false;
-
+        // usernameInput.hidden = true; // hide it// 
+        // usernameInput.hidden = false; // show it//
+      let fortune1Button = document.getElementById("fortune1");
+    let usernameInput = document.getElementById("nextInput");
+    fortune1Button.addEventListener("click", () => {
+         usernameInput.hidden = !usernameInput.hidden;
+        //Show uniqueName button // 
+        document.getElementById("uniqueName").hidden = false;
     })
    </script>
 </body>
