@@ -16,35 +16,151 @@
 </head>
 <body>
    <H1> Welcome the the widget page!</H1> 
-   <H2> Select one fortune button</H2>
-   <H3> The magical fortune</H3>
-   <button id="toggleHide">Red</button>
-   <button id="blue">blue</button>
-   <button id="uniqueName" hidden>Content</button>
+   <H2> The Fortune Detector Selector</H2>
+   <H3> Select your favortie color, then your fortune number. May fate be in your favor</H3>
+   <p>
+   <button id="red">Red</button>
+   <button id="blue">Blue</button>
+   <button id="green">Green</button>
+   </p>
+   <p>
    <button id="fortune1" hidden>Fortune 1</button>
    <button id="fortune2" hidden>Fortune 2</button>
    <button id="fortune3" hidden>Fortune 3</button>
-   <input id="usernameInput" type="text" name="username" hidden>
+   <button id="fortune4" hidden>Fortune 4</button>
+   <button id="fortune5" hidden>Fortune 5</button>
+   <button id="fortune6" hidden>Fortune 6</button>
+   <button id="fortune7" hidden>Fortune 7</button>
+   <button id="fortune8" hidden>Fortune 8</button>
+   <button id="fortune9" hidden>Fortune 9</button>
+   </p>
+   <input id="fortuneText1" type="text" size="50" value="You will get an A+ in Mr SF's class"  hidden readonly>
+   <input id="fortuneText2" type="text" size="50" value="Your favorite student's name starts with 'A' and ends with 'nya'" hidden readonly>
+   <input id="fortuneText3" type="text" size="50" value="Reading this fortune will change your life"  hidden readonly>
+   <input id="fortuneText4" type="text" size="50" value="I will get a 4 on this progect"  hidden readonly>
+   <input id="fortuneText5" type="text" size="50" value="You will meet your true love today"  hidden readonly>
+   <input id="fortuneText6" type="text" size="50" value="One day you will reveal that your initials stand for San Fransisco"  hidden readonly>
+   <input id="fortuneText7" type="text" size="50" value="A bit will use your head as a toilet"  hidden readonly>
+   <input id="fortuneText8" type="text" size="60" value="Your true fortune will be found in a Panda Express fortune cookie"  hidden readonly>
+   <input id="fortuneText9" type="text" size="50" value="On No! 7 ate 9's fortune, you don't get one"  hidden readonly>
    <script>
-    let toggleHideButton = document.getElementById("toggleHide");
-    let usernameInput = document.getElementById("usernameInput");
-    toggleHideButton.addEventListener("click", () => {
-        usernameInput.hidden = !usernameInput.hidden;
-        toggleHideButton.disabled = true;
-        //show fortune1 button //
-        //show fortune2 button //
-        //show fortune3 button //
+    let redButton = document.getElementById("red");
+    redButton.addEventListener("click", () => {
+
+        // show the red button //
+        redButton.disabled = true;
+
+        // hide other button
+        document.getElementById("blue").hidden = true;
+        document.getElementById("green").hidden = true;
+
+        //show fortune buttons //
         document.getElementById("fortune1").hidden = false;
         document.getElementById("fortune2").hidden = false;
         document.getElementById("fortune3").hidden = false;
-        // usernameInput.hidden = true; // hide it// 
-        // usernameInput.hidden = false; // show it//
-      let fortune1Button = document.getElementById("fortune1");
-    let usernameInput = document.getElementById("nextInput");
-    fortune1Button.addEventListener("click", () => {
-         usernameInput.hidden = !usernameInput.hidden;
-        //Show uniqueName button // 
-        document.getElementById("uniqueName").hidden = false;
+    })
+    let blueButton = document.getElementById("blue");
+    blueButton.addEventListener("click", () => {
+
+        // show the blue button //
+        blueButton.disabled = true;
+
+        // hide other button
+        document.getElementById("red").hidden = true;
+        document.getElementById("green").hidden = true;
+
+        //show fortune buttons //
+        document.getElementById("fortune4").hidden = false;
+        document.getElementById("fortune5").hidden = false;
+        document.getElementById("fortune6").hidden = false;
+    })
+     let greenButton = document.getElementById("green");
+    greenButton.addEventListener("click", () => {
+
+        // show the green button //
+        greenButton.disabled = true;
+
+        // hide other button
+        document.getElementById("red").hidden = true;
+        document.getElementById("blue").hidden = true;
+
+        //show fortune buttons //
+        document.getElementById("fortune7").hidden = false;
+        document.getElementById("fortune8").hidden = false;
+        document.getElementById("fortune9").hidden = false;
+    })
+
+    let fortuneButton1 = document.getElementById("fortune1");
+    fortuneButton1.addEventListener("click", () => {
+        // show the text of the fortune
+        document.getElementById("fortuneText1").hidden = false;
+        // hide the other fortune buttons
+        document.getElementById("fortune2").hidden = true;
+        document.getElementById("fortune3").hidden = true;
+    })
+
+    let fortuneButton2 = document.getElementById("fortune2");
+    fortuneButton2.addEventListener("click", () => {
+        // show the text of the fortune
+        document.getElementById("fortuneText2").hidden = false;
+        document.getElementById("fortune1").hidden = true;
+        document.getElementById("fortune3").hidden = true;
+    })
+
+    let fortuneButton3 = document.getElementById("fortune3");
+    fortuneButton3.addEventListener("click", () => {
+        // show the text of the fortune
+        document.getElementById("fortuneText3").hidden = false;
+        document.getElementById("fortune1").hidden = true;
+        document.getElementById("fortune2").hidden = true;
+    })
+    let fortuneButton4 = document.getElementById("fortune4");
+    fortuneButton4.addEventListener("click", () => {
+        // show the text of the fortune
+        document.getElementById("fortuneText4").hidden = false;
+        // hide the other fortune buttons
+        document.getElementById("fortune5").hidden = true;
+        document.getElementById("fortune6").hidden = true;
+    })
+    let fortuneButton5 = document.getElementById("fortune5");
+    fortuneButton5.addEventListener("click", () => {
+        // show the text of the fortune
+        document.getElementById("fortuneText5").hidden = false;
+        // hide the other fortune buttons
+        document.getElementById("fortune4").hidden = true;
+        document.getElementById("fortune6").hidden = true;
+    })
+    let fortuneButton6 = document.getElementById("fortune6");
+    fortuneButton6.addEventListener("click", () => {
+        // show the text of the fortune
+        document.getElementById("fortuneText6").hidden = false;
+        // hide the other fortune buttons
+        document.getElementById("fortune4").hidden = true;
+        document.getElementById("fortune5").hidden = true;
+    })
+    let fortuneButton7 = document.getElementById("fortune7");
+    fortuneButton7.addEventListener("click", () => {
+        // show the text of the fortune
+        document.getElementById("fortuneText7").hidden = false;
+        // hide the other fortune buttons
+        document.getElementById("fortune8").hidden = true;
+        document.getElementById("fortune9").hidden = true;
+    })
+    let fortuneButton8 = document.getElementById("fortune8");
+    fortuneButton8.addEventListener("click", () => {
+        // show the text of the fortune
+        document.getElementById("fortuneText8").hidden = false;
+        // hide the other fortune buttons
+        document.getElementById("fortune7").hidden = true;
+        document.getElementById("fortune9").hidden = true;
+    })
+    let fortuneButton9 = document.getElementById("fortune9");
+    fortuneButton9.addEventListener("click", () => {
+        // show the text of the fortune
+        document.getElementById("fortuneText9").hidden = false;
+        // hide the other fortune buttons
+        document.getElementById("fortune7").hidden = true;
+        document.getElementById("fortune8").hidden = true;
     })
    </script>
 </body>
