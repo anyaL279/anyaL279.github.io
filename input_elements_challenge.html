@@ -103,8 +103,10 @@
         //      to the selected color (colorInput.value).
         // Challenge: Also display the hex code and volume value dynamically.
         colorInput.addEventListener("input", () => {
-             colorOutput.style.backroundColor = "colorImput.value"
+            alert("in")
+             colorOutput.style.backgroundColor = colorInput.value;
         });
+
         // --- PART 3 ---
         const subscribeBox = document.getElementById("subscribeBox");
         const btnSubmit = document.getElementById("btnSubmit");
