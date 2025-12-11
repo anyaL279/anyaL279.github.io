@@ -19,12 +19,12 @@
       
       <section id="food">
         <h3>Select all of my hobbies?</h3>
-       <br> <label><input type="checkbox" id="red">red</label>
-        <br> <label><input type="checkbox" id="gold">gold</label>
-       <br> <label><input type="checkbox" id="black">black</label>
        <br> <label><input type="checkbox" id="biking">Biking</label>
-       <br> <label><input type="checkbox" id="gray">gray</label>
-       <br> <label><input type="checkbox" id="green">green</label>
+        <br> <label><input type="checkbox" id="swiming">Swiming</label>
+       <br> <label><input type="checkbox" id="cooking">Cooking</label>
+       <br> <label><input type="checkbox" id="singing">Singing</label>
+       <br> <label><input type="checkbox" id="driving">Driving</label>
+       <br> <label><input type="checkbox" id="art">Art</label>
 <br><br>
         <button id="btnSubmit">Check</button>
         <div class="output" id="modeOutput"></div>
@@ -32,7 +32,7 @@
       <script>
       btnNumber.addEventListener("click", () => {
         let date = dateInput.value;
-        numberOutput.textContent =
+        // numberOutput.textContent = 
          console.log(numberOutput.textContent);
         if (date == "May 13") {
           numberOutput.textContent = "Correct!"; 
@@ -46,15 +46,15 @@
     
     btnSubmit.addEventListener("click", () => {
 
-        const red = document.getElementById("red").checked;
-        const green = document.getElementById("green").checked;
-        const violet = document.getElementById("biking").checked;
-        const gold = document.getElementById("gold").checked;
-        const black = document.getElementById("black").checked;
-        const gray = document.getElementById("gray").checked;
+        const biking = document.getElementById("biking").checked;
+        const art = document.getElementById("art").checked;
+        const singing = document.getElementById("singing").checked;
+        const swiming = document.getElementById("swiming").checked;
+        const cooking = document.getElementById("cooking").checked;
+        const driving = document.getElementById("driving").checked;
         
  
-        if (red && green && biking && !gold && !black && !gray) {
+        if (biking && art && singing && !swiming && !cooking && !driving) {
             modeOutput.textContent = "Correct!";
 
             if (modeOutput.dataset.scored !== 'true') {
@@ -63,7 +63,7 @@
                 modeOutput.dataset.scored = 'true';
             }
         } else {
-            modeOutput.textContent = "Wrong. Check ALL the correct answers.";
+            modeOutput.textContent = "Nope, try again";
         }
         
     });
