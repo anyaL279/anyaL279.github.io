@@ -1,13 +1,34 @@
+@font-face {
+    font-family: OpenSansExtraBold;
+    src: url(Fonts/OpenSans-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: OpenSansBold;
+    src: url(Fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: OpenSansRegular;
+    src: url(Fonts/OpenSans-Regular.ttf);
+}
+
 html {
-    --text: #4d3a29;
-    --background: #ffffff;
-    --primary: #c9f0b3;
-    --secondary: #fcffb3;
-    --accent: #f5daf9;
+    --text: #071108;
+    --background: #EAE6E5;
+    --primary: #795663;
+    --secondary: #6C809A;
+    --accent: #1E2D24;
+
+    --ff-body: "OpenSansRegular", sans-serif;
+    --ff-heading: "OpenSansExtraBold", serif;
+    --ff-sub-heading: "OpenSansBold", serif;
 }
 
 * {
-    border: 1px solid navy
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -18,32 +39,79 @@ body {
 }
 
 h1 {
-    border: 3px solid #9cdf8e;
-    background-color: rgb(214, 248, 248);
-    padding: 1.2em
+    background-color: var(--primary);
+    padding: 1.2em;
+    font-family: var(--ff-heading);
+    color: var(--background)
 }
 
 
-h3 {
-    color:green;
-    font-family: "Story Script";
+h3, h2 {
+    color:var(--text);
     font-size: 1.5em;
     font-weight: 200;
     text-orientation: sideways;
-    border: 3px dashed rgb(47, 110, 34)
+    font-family: var(--ff-heading);
 }
 
 ul {
-    color:purple;
     font-style: italic;
-    text-decoration-line: underline;
+    text-decoration-line: none;
 }
 
 p.large {
     font-size: 1.5em;
 }
 
+p, ul, ol {
+    font-family: var(--ff-body);
+}
+
 ol {
-    border: 5px dashed #00aaff;
-    padding: 0.9em
+    padding: 0.9em;
+}
+
+.grid__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.grid__container a {
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    margin: 1.5em 1em 0.5em 1em;
+    width: 22rem;
+    height: 12rem;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    border: 4px solid var(--primary);
+}
+
+.main-content {
+    margin: 0.4em;
+}
+
+.btn_img{
+    width: 22rem;
+}
+
+.grid__container a p {
+    font-family: var(--ff-sub-heading);
+    color: var(--text);
 }
