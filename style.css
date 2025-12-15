@@ -14,11 +14,11 @@
 }
 
 html {
-    --text: #071108;
-    --background: #EAE6E5;
-    --primary: #795663;
-    --secondary: #6C809A;
-    --accent: #1E2D24;
+    --text: #345a8b;
+    --background: #e3f6ff;
+    --primary: #c9f0b3;
+    --secondary: #fcffb3;
+    --accent: #f5daf9;
 
     --ff-body: "OpenSansRegular", sans-serif;
     --ff-heading: "OpenSansExtraBold", serif;
@@ -42,7 +42,7 @@ h1 {
     background-color: var(--primary);
     padding: 1.2em;
     font-family: var(--ff-heading);
-    color: var(--background)
+    color: var(--text)
 }
 
 
@@ -89,8 +89,8 @@ ol {
     border-radius: 5px;
     font-size: 1.3rem;
     margin: 1.5em 1em 0.5em 1em;
-    width: 22rem;
-    height: 12rem;
+    width: 18rem;
+    height: 16rem;
     overflow: hidden;
 }
 
