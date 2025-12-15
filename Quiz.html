@@ -35,6 +35,15 @@
         <button id="btnSubmit">Check</button>
         <div class="output" id="modeOutput"></div>
     </section>
+    <section id="Buttons">
+      <h3>Which of the following is NOT true?</h3>
+      <button id="btnOne">The title at the top of this page is "Random quiz"</button>
+      <div class="one" id="btnUno"></div>
+      <button id="btnTwo">I am alive</button>
+      <div class="two" id="btnDos"></div>
+      <button id="btnThree">My website is in black and white</button>
+      <div class="three" id="btnTres"></div>
+    </section>
       <script>
       btnNumber.addEventListener("click", () => {
         let date = dateInput.value;
@@ -73,6 +82,17 @@
         }
         
     });
+     btnOne.addEventListener("click", () => {
+        btnUno.textContent = "Wrong. Try again.";
+      });
+
+      btnTwo.addEventListener("click", () => {
+        btnDos.textContent = "Wrong. Try again.";
+      });
+
+      btnThree.addEventListener("click", () => {
+        btnTres.textContent = "Correct! You may now move on.";
+      });
           </script> 
 
 </body>
