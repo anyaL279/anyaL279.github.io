@@ -63,10 +63,13 @@ p.large {
     font-size: 1.5em;
 }
 
-p, ul, ol {
+ul, ol {
     font-family: var(--ff-body);
 }
-
+p {
+    font-family: var(--ff-body);
+    margin-bottom: 1.5em;
+}
 ol {
     padding: 0.9em;
 }
