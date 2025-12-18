@@ -159,4 +159,6 @@ a {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.background-image {
+  background-image: url("fortuneBack.png");
 }
