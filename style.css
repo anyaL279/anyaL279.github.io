@@ -154,3 +154,9 @@ a {
 .background-image {
   background-image: url("images/fortuneBack.png");
 }
+.widget-btn {
+  font-size: 1.5em;
+  border: 7px solid #4789ec;
+  background-color: #f6f1f7;
+} 
+ 
