@@ -133,3 +133,11 @@ a {
 .image-border {
   border: 5px solid #fcffb3;
 }
+.header-border {
+  border: 7px solid #f5daf9;
+  background-color: #f6f1f7;
+}
+.infoHeader-border {
+  border: 7px solid #c9f0b3;
+  background-color: #c9f0b3;
+}
