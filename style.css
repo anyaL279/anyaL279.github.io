@@ -63,7 +63,7 @@ p.large {
     font-size: 1.5em;
 }
 
-ul, ol {
+ul, ol, h4 {
     font-family: var(--ff-body);
 }
 p {
