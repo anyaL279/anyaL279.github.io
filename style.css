@@ -113,7 +113,7 @@ a {
 
 .btn:hover {
     cursor: pointer;
-    border: 4px solid var(--primary);
+    border: 7px solid var(--primary);
 }
 
 .main-content {
