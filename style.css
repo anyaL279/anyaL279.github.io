@@ -141,3 +141,11 @@ a {
   border: 7px solid #c9f0b3;
   background-color: #c9f0b3;
 }
+.btn-background {
+  border: 7px solid #c9f0b3;
+  background-color: #edf5f8;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
