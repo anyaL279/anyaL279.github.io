@@ -45,6 +45,9 @@ h3, h2 {
     text-orientation: sideways;
     font-family: var(--ff-heading);
 }
+h6 {
+    color: #000000 
+}
 
 .header-with-border {
     border: 5px solid #e4f5fd; /* Width, style, and color */
