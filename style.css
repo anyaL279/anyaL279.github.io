@@ -130,3 +130,6 @@ a {
     font-family: var(--ff-sub-heading);
     color: var(--text);
 }
+.image-border {
+  border: 5px solid #fcffb3;
+}
