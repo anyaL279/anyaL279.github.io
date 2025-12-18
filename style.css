@@ -1,17 +1,4 @@
-@font-face {
-    font-family: OpenSansExtraBold;
-    src: url(Fonts/OpenSans-ExtraBold.ttf);
-}
 
-@font-face {
-    font-family: OpenSansBold;
-    src: url(Fonts/OpenSans-Bold.ttf);
-}
-
-@font-face {
-    font-family: OpenSansRegular;
-    src: url(Fonts/OpenSans-Regular.ttf);
-}
 
 html {
     --text: #345a8b;
@@ -20,9 +7,9 @@ html {
     --secondary: #fcffb3;
     --accent: #f5daf9;
 
-    --ff-body: "OpenSansRegular", sans-serif;
-    --ff-heading: "OpenSansExtraBold", serif;
-    --ff-sub-heading: "OpenSansBold", serif;
+    --ff-body: sans-serif;
+    --ff-heading: serif;
+    --ff-sub-heading: serif;
 }
 
 * {
